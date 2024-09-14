@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-yellow-500;
+  }
+}
+
+@layer utilities {
+  .text-bigger-hello {
+    @apply text-3xl font-semibold;
+  }
+}
+
+@layer components {
+  .primary-btn{
+    @apply w-full bg-yellow-500 hover:bg-amber-400 text-white rounded-custom transition-colors;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera에서 화살표 제거 */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox에서 화살표 제거 */
+input[type=number] {
+  -moz-appearance: textfield;
+}
