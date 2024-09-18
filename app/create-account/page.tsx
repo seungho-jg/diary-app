@@ -15,27 +15,30 @@ export default function CreateAccount() {
         placeholder="닉네임"
         required
         errors={[]}
+        name="nickname"
       />
       <FormInput 
         type="email"
         placeholder="이메일"
         required
         errors={[]}
+        name="email"
       />
       <FormInput 
         type="password"
         placeholder="비밀번호"
         required
         errors={[]}
+        name="password"
       />
       <FormInput 
         type="password"
         placeholder="비밀번호 확인"
         required
         errors={[]}
+        name="comfirm_password"
       />
       <FormButton 
-        loading={false}
         text="회원가입"
       />
       </form>

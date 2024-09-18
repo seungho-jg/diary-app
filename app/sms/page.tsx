@@ -1,6 +1,5 @@
 import FormButton from "@/components/form-btn";
 import FormInput from "@/components/form-input";
-import SocialLogin from "@/components/social-login";
 
 export default function CreateAccount() {
   return (
@@ -15,15 +14,16 @@ export default function CreateAccount() {
         placeholder="phone number"
         required
         errors={[]}
+        name="phone"
       />
       <FormInput 
         type="number"
         placeholder="인증번호"
         required
         errors={[]}
+        name="verify"
       />
-      <FormButton 
-        loading={false}
+      <FormButton
         text="인증"
       />
       </form>
